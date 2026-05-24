@@ -1,0 +1,19 @@
+[project]
+name = "introtodeeplearning"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "jupyter>=1.1.1",
+    "matplotlib>=3.9.0",
+    "mitdeeplearning>=0.7.5",
+    "numpy>=2.4.6",
+    "torch>=2.12.0",
+    "opencv-python>=4.10.0",
+    "h5py>=3.11.0",
+    "ipython>=8.0.0",
+]
+
+[tool.uv.extra-build-dependencies]
+mitdeeplearning = ["setuptools<81"]
